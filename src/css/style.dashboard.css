@@ -131,7 +131,6 @@ a.action-button.detail {
 a.action-button.detail:hover {
     background-color: #6e6e6e;
 }
-
 @media only screen and (min-width: 768px) {
 
     .header {
@@ -145,19 +144,21 @@ a.action-button.detail:hover {
     .content {
 	padding: 15px 35px;
     }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
     .user.panel {
 	display: block;
     }
-
-    .logged.in ul li.user {
+        .logged.in ul li.user {
 	display: none;
     }
-
+.gravatar {
+display:none;
+}
+.header-menu .notifications {
+display:none;
+}
+.header-menu li:last-child {
+margin-right:0 !important;
+}
 }
 
 @media only screen and (min-width: 1170px) {
@@ -165,5 +166,7 @@ a.action-button.detail:hover {
     .logged.in ul li.user {
 	display: block;
     }
-
+.header-menu .notifications {
+display:inline;
+}
 }
